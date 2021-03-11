@@ -8,7 +8,7 @@ def how_many(input_arr):
 
     for i in range(len(input_arr)):
         if end <= input_arr[i][0]:                  # 정렬된 i 번째 회의 시작 시각이 end 보다 나중이면(= 회의 가능)
-            end = input_arr[i][1]                   # i 번쨰 회의 종료 시각을 갱신
+            end = input_arr[i][1]                   # i 번째 회의 종료 시각을 갱신
             max_meeting += 1                        # i 번째 회의가 가능하므로 추가
     return max_meeting                              # 정답! 최대 answer 개!!
 
