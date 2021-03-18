@@ -4,6 +4,7 @@ input = sys.stdin.readline                  # 시간 최적화 - input 을 readl
 N = int(input())                            # 첫째 줄에 수의 개수 N(1 ≤ N ≤ 1,000,000)이 주어진다.
 array = []
 
+
 def sort():
     for i in range(N):                      # 둘째 줄부터 N개의 줄에는 숫자가 주어진다
         array.append(int(input()))
