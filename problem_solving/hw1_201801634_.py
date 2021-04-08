@@ -44,7 +44,7 @@ def subtract(left: str, right: str) -> str:
 
 def assert_number(possibly_a_number: str):
     if not re.match('-?[0-9]+', possibly_a_number):
-        raise Exception("잘못됩 입력입니다. 다시 입력해주세요.")
+        raise Exception("Wrong format.")
 
 
 def parse(left: str, right: str):
