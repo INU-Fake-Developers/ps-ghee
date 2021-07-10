@@ -8,7 +8,7 @@ length_N = len(N)               # len(N)을 변수로 -> 최적화
 # print(length_N)
 for i in range(length_N):
     word_list.append(N[i:])     # 차례차례 잘라내기
-    print(word_list)
+    # print(word_list)
 
 # print(word_list)
 
