@@ -2,14 +2,14 @@ import sys
 from collections import deque
 input = sys.stdin.readline
 
-dx = [1, -1, 0, 0]                                                  # 위치 이동
-dy = [0, 0, -1, 1]                                                  # 위치 이동
+dx = [1, -1, 0, 0]                                                  # 행 위치 이동
+dy = [0, 0, -1, 1]                                                  # 열 위치 이동
 
 
 def bfs():
     q = deque()
     q.append([0, 0, 1])
-    visit = [[[0] * 2 for i in range(M)] for i in range(N)]         # N × M의 행렬, N 줄에 M 개
+    visit = [[[0] * 2 for i in range(M)] for i in range(N)]         # N × M의 행렬, N 줄에 M 개, N 행 M 열
     #print(visit)
     print()
     visit[0][0][1] = 1                                              # 시작하는 첫 번째 칸
