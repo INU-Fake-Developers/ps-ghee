@@ -10,16 +10,16 @@ def bfs():
     q = deque()
     q.append([0, 0, 1])
     visit = [[[0] * 2 for i in range(M)] for i in range(N)]         # N × M의 행렬, N 줄에 M 개, N 행 M 열
-    #print(visit)
-    print()
+    # print(visit)
+    # print()
     visit[0][0][1] = 1                                              # 시작하는 첫 번째 칸
-    print(visit)
-    print()
+    # print(visit)
+    # print()
 
     while q:
         a, b, w = q.popleft()                                       # 가로위치, 세로위치, 벽뚫여부(겸 이동한 거리)
         if a == N - 1 and b == M - 1:                               # 도착했을 경우 (N x M 이므로 인덱스 최댓값은 N-1, M-1)
-            print("visit[a][b][w]: ", visit[a][b][w])
+            # print("visit[a][b][w]: ", visit[a][b][w])
             return visit[a][b][w]
         for i in range(4):
             x = a + dx[i]                                           # x 이동
@@ -27,8 +27,8 @@ def bfs():
             print("x, y: ", x, y)
 
             if 0 <= x < N and 0 <= y < M:                           # 맵 범위 내에 있다면
-                print("map_input[x][y]: ", map_input[x][y])
-                print()
+                # print("map_input[x][y]: ", map_input[x][y])
+                # print()
                 if map_input[x][y] == 1 and w == 1:                 # 벽이고, 벽뚫 가능
                     visit[x][y][0] = visit[a][b][1] + 1             # 이동한 거리 1 증가
                     q.append([x, y, 0])                             # 벽뚫횟수 1회 소모 완료

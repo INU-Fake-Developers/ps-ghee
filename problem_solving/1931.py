@@ -23,4 +23,4 @@ for i in range(N):                      # 주어진 회의 수만큼
     meeting_table.append([A, B])        # 구분한 A, B를 묶어 회의실 사용표에 추가한다
 
 meeting_table.sort(key=lambda x: (x[1], x[0]))  # x[1] 오름차순(종료 시각 오름차순)을 토대로 x[0] 오름차순(시작 시각 오름차순) 정렬
-print(how_many(meeting_table))                  # 왜? 빨리 끝내고 한 팀이라도 더 받아야지!
+print(how_many(meeting_table))                  # 왜? 빨리 끝내고 한 팀이라도 더 받아야지! 일찍 시작해도 늦게 끝나는 회의가 있다면 최대 회의 수를 구할 수 없음

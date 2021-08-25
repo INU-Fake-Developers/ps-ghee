@@ -6,9 +6,8 @@ N = str(input())                # readline 은 개행문자까지 받으므로 �
 word_list = []                  # 인덱싱 처리된 친구들이 담길 리스트
 length_N = len(N)               # len(N)을 변수로 -> 최적화
 # print(length_N)
-for i in range(length_N):
-    word_list.append(N[i:])     # 차례차례 잘라내기
-    # print(word_list)
+word_list = []                  # 인덱싱 처리된 친구들이 담길 리스트
+word_list = []                  # 인덱싱 처리된 친구들이 담길 리스트
 
 # print(word_list)
 
